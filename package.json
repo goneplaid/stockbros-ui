@@ -1,5 +1,8 @@
 {
-  "name": "stockbros-uix",
+  "name": "stockbros-ui",
+  "description": "A fun game of reckless capitalism!",
+  "author": "Shawn Wilson",
+  "license": "CC0-1.0",
   "version": "0.1.0",
   "private": true,
   "scripts": {
