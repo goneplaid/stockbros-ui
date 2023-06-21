@@ -6,21 +6,24 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      heading: ["var(--font-heading)"],
+      subheading: ["var(--font-subheading)"],
+      "secondary-heading": ["var(--font-secondary-heading)"],
+      primary: ["var(--font-primary)"],
+    },
     extend: {
+      colors: {
+        primary: "#133E51",
+        secondary: "#02030C",
+        tertiary: "#797979",
+        brand: "#68CEFD",
+      },
       backgroundImage: {
         "stage-1": "url('/images/backgrounds/stage-1.png')",
         "stage-2": "url('/images/backgrounds/stage-2.png')",
         "stage-3": "url('/images/backgrounds/stage-3.png')",
         "stage-4": "url('/images/backgrounds/stage-4.png')",
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      fontFamily: {
-        heading: ["var(--font-heading)"],
-        subheading: ["var(--font-subheading)"],
-        "secondary-heading": ["var(--font-secondary-heading)"],
-        primary: ["var(--font-primary)"],
       },
     },
   },
