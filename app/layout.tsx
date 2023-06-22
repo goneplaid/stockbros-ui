@@ -1,7 +1,5 @@
 import "./theme/globals.css";
 import fonts, { Fonts } from "./theme/fonts";
-import { ThemeProvider, createTheme } from "@mui/material";
-import theme from "./theme/mui-theme";
 
 const fontVars = Object.keys(fonts)
   .map((k: string) => fonts[k as keyof Fonts].variable)

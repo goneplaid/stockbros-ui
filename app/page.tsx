@@ -10,7 +10,6 @@ export default function Home() {
             A fun game of reckless capitalism! 😉
           </h3>
         </header>
-        <main></main>
       </div>
     </>
   );
