@@ -1,7 +1,7 @@
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 import { Luckiest_Guy, Oswald, Quicksand, Inter } from "next/font/google";
 
-// We'll need to reconcile these fonts with how MUI handles them for thmeing
+// We'll need to reconcile these fonts with how MUI handles them for theming
 export type FontTypes =
   | "heading"
   | "subheading"
