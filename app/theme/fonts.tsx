@@ -1,4 +1,16 @@
+import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 import { Luckiest_Guy, Oswald, Quicksand, Inter } from "next/font/google";
+
+// We'll need to reconcile these fonts with how MUI handles them for thmeing
+export type FontTypes =
+  | "heading"
+  | "subheading"
+  | "secondaryHeading"
+  | "primary";
+
+export type Fonts = {
+  [key in FontTypes]: NextFontWithVariable;
+};
 
 const heading = Luckiest_Guy({
   weight: "400",
@@ -28,6 +40,6 @@ const primary = Inter({
   display: "swap",
 });
 
-const fonts = [heading, subheading, secondaryHeading, primary];
+const fonts: Fonts = { heading, subheading, secondaryHeading, primary };
 
 export default fonts;

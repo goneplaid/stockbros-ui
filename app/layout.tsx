@@ -1,7 +1,11 @@
-import "./globals.css";
-import fonts from "./fonts";
+import "./theme/globals.css";
+import fonts, { Fonts } from "./theme/fonts";
+import { ThemeProvider, createTheme } from "@mui/material";
+import theme from "./theme/mui-theme";
 
-const fontVars = fonts.map((f) => f.variable).join(" ");
+const fontVars = Object.keys(fonts)
+  .map((k: string) => fonts[k as keyof Fonts].variable)
+  .join(" ");
 
 export const metadata = {
   title: "Stock Bro's",
