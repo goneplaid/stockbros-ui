@@ -1,20 +1,26 @@
 import React from "react";
 
+export type ButtonVariant =
+  | "neutral"
+  | "primary"
+  | "secondary"
+  | "accent"
+  | "info"
+  | "success"
+  | "warning"
+  | "error"
+  | "ghost"
+  | "link"
+  | "glass";
+
+export type ButtonSize = "lg" | "md" | "sm" | "xs";
+
+export type ButtonShape = "wide" | "block" | "circle" | "square";
+
 export type ButtonProps = {
-  variant?:
-    | "neutral"
-    | "primary"
-    | "secondary"
-    | "accent"
-    | "info"
-    | "success"
-    | "warning"
-    | "error"
-    | "ghost"
-    | "link"
-    | "glass";
-  size?: "lg" | "md" | "sm" | "xs";
-  shape?: "wide" | "block" | "circle" | "square";
+  variant?: ButtonVariant;
+  size?: ButtonSize;
+  shape?: ButtonShape;
   outline?: boolean;
   active?: boolean;
   disabled?: boolean;
