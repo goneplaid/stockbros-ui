@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stock Bro's UI
+
+`stockbros-ui` is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It serves as the front-end for the Stock Bro's game and works alongside [stockbros-server](https://github.com/goneplaid/stockbros-server).
 
 ## Getting Started
 

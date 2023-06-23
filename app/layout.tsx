@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="early-stage">
+    <html lang="en" data-theme="earlystage">
       <body className={fontVars}>
         <main className="flex min-h-screen flex-col items-center justify-between p-12 bg-stage-1 bg-no-repeat bg-cover bg-[center_bottom_25%]">
           {children}

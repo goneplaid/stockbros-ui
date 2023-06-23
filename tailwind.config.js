@@ -31,7 +31,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        "early-stage": {
+        earlystage: {
           primary: "rgba(19, 62, 81, 1)",
           secondary: "rgba(121, 121, 121, 1)",
           accent: "rgba(175, 237, 252, 1)",

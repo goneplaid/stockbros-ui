@@ -1,0 +1,11 @@
+:root {
+  --primary-color: rgba(19, 62, 81, 1);
+  --secondary-color: rgba(121, 121, 121, 1);
+  --accent-color: rgba(175, 237, 252, 1);
+  --neutral-color: rgba(2, 3, 12, 1);
+  --base-100-color: rgba(104, 206, 253, 1);
+  --info-color: #bbf7d0;
+  --success-color: #4ade80;
+  --warning-color: #fef08a;
+  --error-color: #ec4899;
+}
