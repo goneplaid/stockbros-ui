@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="z-10 w-full max-w-7xl items-center justify-between text-sm lg:flex">
+      <div className="z-10 w-full max-w-7xl items-center justify-between text-sm">
         <header className="w-full flex items-center flex-col gap-2">
           <h1 className="font-heading text-5xl text-white drop-shadow-lg">
             Stock Bro&apos;s
@@ -10,6 +10,9 @@ export default function Home() {
             A fun game of reckless capitalism! 😉
           </h3>
         </header>
+        <main>
+          <button className="btn">Hello daisyUI</button>
+        </main>
       </div>
     </>
   );

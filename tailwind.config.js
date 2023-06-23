@@ -27,5 +27,22 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        "early-stage": {
+          primary: "rgba(19, 62, 81, 1)",
+          secondary: "rgba(121, 121, 121, 1)",
+          accent: "rgba(175, 237, 252, 1)",
+          neutral: "rgba(2, 3, 12, 1)",
+          "base-100": "rgba(104, 206, 253, 1)",
+          info: "#bbf7d0",
+          success: "#4ade80",
+          warning: "#fef08a",
+          error: "#ec4899",
+        },
+      },
+    ],
+  },
 };
