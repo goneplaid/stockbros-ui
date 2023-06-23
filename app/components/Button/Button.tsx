@@ -32,36 +32,6 @@ const Button: React.FC<ButtonProps> = ({
   children,
   ...rest
 }) => {
-  // Define class names
-  const variantClasses = {
-    neutral: "btn-neutral",
-    primary: "btn-primary",
-    secondary: "btn-secondary",
-    accent: "btn-accent",
-    info: "btn-info",
-    success: "btn-success",
-    warning: "btn-warning",
-    error: "btn-error",
-    ghost: "btn-ghost",
-    link: "btn-link",
-    glass: "glass",
-  };
-
-  const sizeClasses = {
-    lg: "btn-lg",
-    md: "btn-md",
-    sm: "btn-sm",
-    xs: "btn-xs",
-  };
-
-  const shapeClasses = {
-    wide: "btn-wide",
-    block: "btn-block",
-    circle: "btn-circle",
-    square: "btn-square",
-  };
-
-  // Construct the class string using the defined classes
   const className = [
     "btn",
     variant && variantClasses[variant],
@@ -83,3 +53,31 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
+
+const variantClasses = {
+  neutral: "btn-neutral",
+  primary: "btn-primary",
+  secondary: "btn-secondary",
+  accent: "btn-accent",
+  info: "btn-info",
+  success: "btn-success",
+  warning: "btn-warning",
+  error: "btn-error",
+  ghost: "btn-ghost",
+  link: "btn-link",
+  glass: "glass",
+};
+
+const sizeClasses = {
+  lg: "btn-lg",
+  md: "btn-md",
+  sm: "btn-sm",
+  xs: "btn-xs",
+};
+
+const shapeClasses = {
+  wide: "btn-wide",
+  block: "btn-block",
+  circle: "btn-circle",
+  square: "btn-square",
+};

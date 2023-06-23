@@ -10,6 +10,7 @@ const meta: Meta = {
       control: {
         type: "select",
         options: [
+          "",
           "neutral",
           "primary",
           "secondary",
@@ -47,54 +48,128 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const Neutral: Story = {
+// Variants
+
+export const DefaultVariant: Story = {
   args: {
-    variant: "neutral",
-    children: "Button",
+    variant: undefined,
+    children: "Default variant",
   },
 };
 
-export const Primary: Story = {
+export const PrimaryVariant: Story = {
   args: {
     variant: "primary",
-    children: "Button",
+    children: "Primary variant",
   },
 };
 
-export const Secondary: Story = {
+export const SecondaryVariant: Story = {
   args: {
     variant: "secondary",
-    children: "Button",
+    children: "Secondary variant",
   },
 };
 
-// Repeat for the rest of the variants...
+export const AccentVariant: Story = {
+  args: {
+    variant: "accent",
+    children: "Accent variant",
+  },
+};
 
-export const Large: Story = {
+export const NeutralVariant: Story = {
+  args: {
+    variant: "neutral",
+    children: "Neutral variant",
+  },
+};
+
+export const InfoVariant: Story = {
+  args: {
+    variant: "info",
+    children: "Info variant",
+  },
+};
+
+export const SuccessVariant: Story = {
+  args: {
+    variant: "success",
+    children: "Success variant",
+  },
+};
+
+export const WarningVariant: Story = {
+  args: {
+    variant: "warning",
+    children: "Warning variant",
+  },
+};
+
+export const ErrorVariant: Story = {
+  args: {
+    variant: "error",
+    children: "Error variant",
+  },
+};
+
+// Sizes
+
+export const LargeButton: Story = {
   args: {
     size: "lg",
-    children: "Button",
+    children: "Large Button",
   },
 };
 
-export const Medium: Story = {
+export const MediumButton: Story = {
   args: {
     size: "md",
-    children: "Button",
+    children: "Medium button",
   },
 };
 
-export const Small: Story = {
+export const SmallButton: Story = {
   args: {
     size: "sm",
+    children: "Small button",
+  },
+};
+
+export const ExtraSmallButton: Story = {
+  args: {
+    size: "xs",
+    children: "Extra-small Button",
+  },
+};
+
+// Shapes
+
+export const WideButton: Story = {
+  args: {
+    shape: "wide",
     children: "Button",
   },
 };
 
-export const ExtraSmall: Story = {
+export const BlockButton: Story = {
   args: {
-    size: "xs",
+    shape: "block",
     children: "Button",
+  },
+};
+
+export const CircleButton: Story = {
+  args: {
+    shape: "circle",
+    children: "👋",
+  },
+};
+
+export const SquareButton: Story = {
+  args: {
+    shape: "square",
+    children: "👋",
   },
 };
 
