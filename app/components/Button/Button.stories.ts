@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Button, { ButtonProps } from "./Button";
+import Button from "./Button";
+import { ButtonProps } from "./Button.types";
 
 const meta: Meta = {
   title: "Example/Button",
@@ -173,23 +174,25 @@ export const SquareButton: Story = {
   },
 };
 
-export const Outline: Story = {
+// Misc
+
+export const OutlinedButton: Story = {
   args: {
     outline: true,
-    children: "Button",
+    children: "Outlined button",
   },
 };
 
-export const Active: Story = {
+export const ActiveButton: Story = {
   args: {
     active: true,
-    children: "Button",
+    children: "Active button",
   },
 };
 
-export const Disabled: Story = {
+export const DisabledButton: Story = {
   args: {
     disabled: true,
-    children: "Button",
+    children: "Disabled button",
   },
 };

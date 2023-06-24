@@ -1,7 +1,8 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Button, { ButtonShape, ButtonSize, ButtonVariant } from "./Button"; // Adjust this import to your file structure
+import Button from "./Button"; // Adjust this import to your file structure
+import { ButtonShape, ButtonSize, ButtonVariant } from "./Button.types"; // Adjust this import to your file structure
 
 describe("Button", () => {
   test("renders button correctly", () => {
